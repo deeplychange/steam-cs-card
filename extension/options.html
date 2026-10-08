@@ -1,0 +1,14 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>CS 资料卡设置</title><link rel="stylesheet" href="options.css"><body><main>
+<p class="overline">CS CROSS PLATFORM · 0.9.1</p><h1>完美 App 扫码登录</h1>
+<div class="connect"><strong>Steam 用户：先连接本机辅助程序</strong><p>双击压缩包中 helper/Start.cmd，保持窗口开启。复制窗口里的连接码到下面，再点击连接。</p><label>本机连接码<input id="bridge-key" type="password" autocomplete="off" placeholder="辅助程序窗口中的连接码，不是账号 token"></label><button id="bridge-connect" type="button">连接本机辅助程序</button><p class="note">只在你的电脑上转发三个固定官方接口，无需填写手机号、密码或账号 token。连接码每次启动变化，不会写入磁盘。</p></div>
+<p>点击生成二维码，使用<strong>完美世界电竞 App 的扫一扫</strong>扫描，并在手机上确认登录。</p>
+<p>这是本机插件的登录设置页。二维码来自 <code>passport.pwesports.cn/qrAuth/applyToken</code>，内容是官方返回的 <code>news.wmpvp.com</code> 登录地址；二维码在本机生成。</p>
+<button id="qr-start" type="button">生成登录二维码</button><button id="qr-cancel" type="button">取消扫码</button><button id="logout" type="button">清除插件登录</button>
+<div id="qr-box" hidden><div id="qr-image" role="img" aria-label="完美世界电竞 App 登录二维码"></div><p>请用完美世界电竞 App 扫描并确认，不是微信或 Steam 扫码。</p><p class="note">最多等待两分钟；二维码可能更早被官方标记过期。过期后重新生成。</p></div>
+<p id="status" role="status" aria-live="polite">正在检查本机登录状态…</p>
+<button id="diagnose" type="button">查看诊断信息</button><pre id="diagnostics" hidden></pre>
+<p class="note">二维码生成及未确认状态查询已实测。扫码确认后的令牌与战绩接口仍需真人账号验证。页面会区分“收到令牌”和“战绩验证成功”；完美封禁仍未接通。</p>
+<p class="note">5E 封禁、赛季菜单与战绩无需登录。令牌仅保存在扩展会话存储中，不返回 Steam 网页；浏览器完全退出或扩展重新加载后清除。清除插件登录不会退出官方 App。</p>
+<p class="note">此版本已停用短信登录，不需要填写手机号或验证码。请只确认你刚刚在本插件发起的登录二维码。</p>
+</main><script src="vendor/qrcode.js"></script><script src="options.js"></script></body></html>
+

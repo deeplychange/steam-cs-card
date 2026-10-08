@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "CS 跨平台资料卡",
+  "version": "0.9.1",
+  "description": "在 Steam 玩家资料旁显示完美与 5E 信息。接口验证原型。",
+  "permissions": ["storage", "declarativeNetRequestWithHostAccess"],
+  "host_permissions": ["http://127.0.0.1:27843/*", "https://passport.pwesports.cn/*", "https://api.wmpvp.com/*", "https://appengine.wmpvp.com/*", "https://steamcommunity.com/*", "https://api-client-arena.5eplay.com/*", "https://arena.5eplay.com/*", "https://gate.5eplay.com/*"],
+  "background": {"service_worker": "background.js"},
+  "content_scripts": [{"matches": ["https://steamcommunity.com/profiles/*", "https://steamcommunity.com/id/*"], "js": ["core.js", "content.js"], "run_at": "document_idle"}],
+  "options_page": "options.html",
+  "action": {"default_title": "CS 资料卡设置"}
+}
+
+
+
