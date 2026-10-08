@@ -1,0 +1,16 @@
+# Only publish the maintained source tree. Local browser profiles may contain sessions.
+/*
+!/.gitignore
+!/README.md
+!/package.json
+!/extension/
+!/helper/
+!/tests/
+!/preview.html
+!/preview-server.cjs
+
+node_modules/
+.env
+.env.*
+*.log
+*.zip

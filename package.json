@@ -1,0 +1,4 @@
+{"name":"steam-cs-card","private":true,"version":"0.9.1","scripts":{"test":"node --test tests/*.test.cjs","preview":"node preview-server.cjs"}}
+
+
+
