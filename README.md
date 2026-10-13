@@ -2,7 +2,7 @@
 
 在 Steam 玩家的个人资料主页旁显示 CS 跨平台信息。本项目是浏览器扩展；在 Steam 客户端中使用，需要先安装 **Millennium → Extendium → 本资料卡扩展**。下面以 Windows 为例。
 
-> **当前可用范围：**5E 封禁状态、字母段位、分数、Rating 和赛季战绩可免登录查询。完美公开搜索可匹配昵称；完美扫码登录与战绩属于试验功能，尚未完成真人登录验证，**完美封禁查询未接通**。安装成功不代表这些完美功能已经可用。“未知”不等于未封禁。
+> **当前可用范围：** 5E 封禁状态、字母段位、分数、Rating 和赛季战绩可免登录查询。完美公开搜索可匹配昵称；完美扫码登录与战绩属于试验功能，尚未完成真人登录验证，**完美封禁查询未接通**。安装成功不代表这些完美功能已经可用。“未知”不等于未封禁。
 
 ## 1. 需要先下载什么
 
@@ -14,7 +14,7 @@
 | 仅尝试完美扫码功能时需要 | Node.js：运行本仓库的本机辅助程序 | [Node.js 官网](https://nodejs.org/)（选择当前 LTS；程序最低要求 18） |
 | 仅尝试完美扫码功能时需要 | 完美世界电竞 App | 手机应用商店搜索“完美世界电竞”；扫码功能仍待验证 |
 
-**只查询 5E 不需要 Node.js、辅助程序或完美登录。**在 Chrome / Edge 中使用，也不需要 Millennium 和 Extendium。Millennium、Extendium 是社区项目，不是 Steam 官方内置功能；本资料卡也不是完美或 5E 官方插件。
+**只查询 5E 不需要 Node.js、辅助程序或完美登录。** 在 Chrome / Edge 中使用，也不需要 Millennium 和 Extendium。Millennium、Extendium 是社区项目，不是 Steam 官方内置功能；本资料卡也不是完美或 5E 官方插件。
 
 ## 2. 下载并解压本资料卡
 
@@ -86,7 +86,7 @@ steam-cs-card-main/
 
 ## 6. 完美扫码试验功能（可选）
 
-**这一节不是查询 5E 的必做步骤。**当前仅验证了二维码申请、等待状态与取消流程，尚未确认真实手机扫码后的登录和战绩查询能成功，完美封禁仍未接通。如果 App 提示二维码不可用，不要反复登录或发送手机号、验证码、Cookie、token；请在 Issue 中反馈脱敏后的报错。
+**这一节不是查询 5E 的必做步骤。** 当前仅验证了二维码申请、等待状态与取消流程，尚未确认真实手机扫码后的登录和战绩查询能成功，完美封禁仍未接通。如果 App 提示二维码不可用，不要反复登录或发送手机号、验证码、Cookie、token；请在 Issue 中反馈脱敏后的报错。
 
 1. 从 [Node.js 官网](https://nodejs.org/)安装当前 LTS 版本。
 2. 双击解压目录中的 `helper/Start.cmd`，保持辅助程序窗口开启。
@@ -179,4 +179,5 @@ steam-cs-card-main/
 扫码接口参考：https://github.com/Agnes4m/CS2UID/blob/main/CS2UID/utils/api/login.py （社区源码，不是官方第三方授权文档）。战绩参考：https://github.com/Redamancy520/PerfectWorld-API-Collection 。二维码编码器为 qrcode-generator js2.0.4，MIT 许可证随 vendor 目录附带。
 
 “未知”不等于未封禁。PW Rating 与 5E Rating 统计口径不同。
+
 
